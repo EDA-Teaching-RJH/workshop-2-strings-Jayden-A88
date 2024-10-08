@@ -2,13 +2,18 @@ def main():
     pounds = pounds_to_float(input("How much was the meal? "))
     percent = percent_to_float(input("What percentage would you like to charge? "))
     charge = pounds * percent
-    print(f"Charge £{charge:.2f}")
+    Total = charge + pounds
+    print(f"Total £{Total:.2f}")
 
 
 def pounds_to_float(d):
-    # TODO
+    d = d.replace("£", "")
+    return float(d)
 
 def percent_to_float(p):
-    # TODO
+    p = p.replace("%", "")
+    return float(p) / 100
 
 main()
+  git config --global user.email "jja33@kent.ac.uk"
+  git config --global user.name "Jayden Asante"
